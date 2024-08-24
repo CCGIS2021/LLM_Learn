@@ -52,7 +52,7 @@ if __name__=='__main__':
 ```
 
 运行结果：
-![1]("imgs/20240824224447.png")
+![1](imgs/20240824224447.png)
 
 # 远程调试过程：
 - 连接ssh
@@ -60,7 +60,7 @@ if __name__=='__main__':
 ##  单文件调试
 - 点击VSCode侧边栏的“Run and Debug”（运行和调试），然后点击“Run and Debug”（开始调试）按钮
 - 选择python file 
-- ![[Pasted image 20240824225344.png]]
+- ![[Pasted image 20240824225344.png]](imgs/20240824225344.png)
 
 ## 命令行带参数调试
 
@@ -69,4 +69,4 @@ if __name__=='__main__':
 - pip install debugp
 - python -m debugpy --listen 5678 --wait-for-client ./myscript.py
 - 点击绿色dubug按钮
-- ![[Pasted image 20240824225745.png]]
+- ![[Pasted image 20240824225745.png]](imgs/20240824225745.png)
