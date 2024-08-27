@@ -9,3 +9,9 @@
 - git add .
 - git commit -m "update"
 - git push
+
+## 3.删除文件
+- git rm --cached <file_name> # 删除文件跟踪
+- 或者 git rm <file_name> # 删除文件
+- git commit -m "delete <file_name>"
+- git push
