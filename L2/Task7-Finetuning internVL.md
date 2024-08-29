@@ -378,7 +378,7 @@ python3 /root/L2/Task4/XTuner/xtuner/configs/internvl/v1_5/convert_to_official.p
 
 微调后：
 
-![[Pasted image 20240828091602.png]](imgs/Pasted%20image%2020240828091602.png)
+![[Pasted image 20240828091602.png]](imgs/test2.jpg)
 
 ## 基于lmdeploy serve 启动api服务
 ```
