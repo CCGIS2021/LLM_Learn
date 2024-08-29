@@ -19,18 +19,20 @@
 		pip install BCEmbedding==0.1.5 cmake==3.30.2 lit==18.1.8 sentencepiece==0.2.0 protobuf==5.27.3 accelerate==0.33.0
 		# 这里BCEmbedding版本号是0.1.5不是教程中的0.15
 		pip install -r requirements.txt
+		# 此处faiss-gpu安装不上，单独安装了
+		conda install -c conda-forge faiss-gpu
 - 链接模型
 		ln -s /root/share/new_models/maidalun1020/bce-embedding-base_v1 /root/model/bce-embedding-base_v1
 		ln -s /root/share/new_models/maidalun1020/bce-reranker-base_v1 /root/model/bce-reranker-base_v1
 		ln -s /root/share/new_models/Shanghai_AI_Laboratory/internlm2-chat-7b /root/model/internlm2-chat-7b
 此时model下：
-![[Pasted image 20240829153743.png]](imgs/Pasted%20image%2020240825174609.png)
+![[Pasted image 20240829153743.png]](imgs/Pasted%20image%2020240829153743.png)
 
 ## 修改茴香豆配置文件
 /root/huixiangdou/config.ini
 L9:embedding_model_path = "/root/model/bce-embedding-base_v1"
 L15:reranker_model_path = "/root/model/bce-reranker-base_v1"
-L43:local_llm_path = "/root/models/internlm2-chat-7b"
+L43:local_llm_path = "/root/model/internlm2-chat-7b"
 
 ## 创建知识库索引
 此处放置知识库：
@@ -62,5 +64,6 @@ python3 -m huixiangdou.gradio
 ```
 
 - 运行结果
-- ![[Pasted image 20240829153753.png]](imgs/Pasted%20image%20240829153753.png)
-
+![[Pasted image 20240829173534.png]](imgs/Pasted%20image%2020240829173534.png)
+- 
+![[Pasted image 20240829173914.png]](imgs/Pasted%20image%2020240829173914.png)
