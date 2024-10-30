@@ -6,8 +6,8 @@ def git_push_with_retries(remote='origin', branch='main', max_retries=50, wait_t
         try:
             # 执行 git push 命令
             print("Pushing to GitHub...")
-            # subprocess.run(['git', 'push'], check=True)
-            subprocess.run(['git', 'push','-u','origin','icamp4'], check=True)
+            subprocess.run(['git', 'push'], check=True)
+            # subprocess.run(['git', 'push','-u','origin','icamp4'], check=True)
             print("Push succeeded!")
             break
         except subprocess.CalledProcessError as e:
