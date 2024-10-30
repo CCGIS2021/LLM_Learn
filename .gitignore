@@ -1,3 +1,4 @@
 ./chat_history/
 ./tmp/*
 *.docx
+old/
