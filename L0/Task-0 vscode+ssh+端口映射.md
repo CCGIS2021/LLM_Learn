@@ -157,7 +157,7 @@ with gr.Blocks(gr.themes.Soft()) as demo:
 demo.launch()
 ```
 
-![image.png](imgs\20241030104706.png)
+![image.png](imgs/20241030104706.png)
 执行python helloworld.py
 
   
@@ -169,4 +169,4 @@ demo.launch()
   
 
 运行结果  
-![image.png](imgs\20241030104904.png)
+![image.png](imgs/20241030104904.png)
